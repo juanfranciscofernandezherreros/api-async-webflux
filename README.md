@@ -29,22 +29,3 @@ Sigue estos pasos para poner en marcha la aplicación en tu entorno local.
 git clone [https://github.com/juanfranciscofernandezherreros/api-async-webflux.git](https://github.com/juanfranciscofernandezherreros/api-async-webflux.git)
 cd api-async-webflux
 ```
-
-### 2. Iniciar la Infraestructura de Mensajería (Kafka y Schema Registry)Usando Docker Compose, levanta Zookeeper, Kafka y el Schema Registry:Bashdocker-compose up -d
-Nota: Espera unos segundos a que todos los servicios estén completamente operativos antes de arrancar la aplicación Spring.3. Compilar el ProyectoCompila todas las dependencias y clases (esto también generará las clases Java a partir de los esquemas Avro):Bashmvn clean install
-
-### 3. Ejecutar la AplicaciónEjecuta la aplicación usando el plugin de Spring Boot:Bashmvn spring-boot:run
-   
-ℹ️ Por defecto, la API se ejecutará en http://localhost:8080.🏗️ Estructura del ProyectoBashapi-async-webflux
-├── src/main/java
-│   └── com.example.webflux
-│       ├── controller   # Endpoints REST y Producción/Consumo de Kafka
-│       ├── service      # Lógica de negocio reactiva
-│       ├── model        # Clases de datos
-│       └── config       # Configuraciones de WebFlux/Kafka
-├── src/main/resources
-│   ├── avro        # Esquemas Avro (.avsc)
-│   └── application.yml # Configuración de Spring
-├── src/test/java        # Clases de Pruebas
-├── pom.xml              # Dependencias (incluye `avro-maven-plugin`)
-└── docker-compose.yml  # Infraestructura local
