@@ -6,8 +6,6 @@ API asíncrona de ejemplo construida con **Spring WebFlux** que permite manejar 
 
 * **Programación Reactiva:** Basado en **Spring WebFlux** (Reactor Core) para un modelo de concurrencia no bloqueante.
 * **Endpoints Asíncronos:** Uso de tipos reactivos clave como `Mono` (0 o 1 elemento) y `Flux` (0 a N elementos) en los controladores.
-* **Mensajería Reactiva:** Integración con **Kafka** utilizando librerías reactivas para una comunicación *end-to-end* no bloqueante.
-* **Serialización Segura:** Uso de **Apache Avro** y **Schema Registry** para una serialización de mensajes en Kafka robusta y con gestión de esquema.
 * **Pruebas Profesionales:** Incluye tests unitarios con **JUnit 5** y tests de integración con **WebTestClient**.
 
 ## ⚙️ Requisitos
@@ -17,7 +15,6 @@ Asegúrate de tener instalados los siguientes componentes antes de comenzar:
 * **Java 17+** (Recomendado: OpenJDK 17)
 * **Maven 3.8+**
 * **IDE con soporte Java:** IntelliJ IDEA, Eclipse o VS Code.
-* **Docker y Docker Compose:** Necesarios para ejecutar la infraestructura de Kafka y Schema Registry.
 
 ## 📦 Instalación y Ejecución
 
