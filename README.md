@@ -26,6 +26,6 @@ Sigue estos pasos para poner en marcha la aplicación en tu entorno local.
 ### 1. Clonar el Repositorio
 
 ```bash
-git clone [https://github.com/juanfranciscofernandezherreros/api-async-webflux.git](https://github.com/juanfranciscofernandezherreros/api-async-webflux.git)
+git clone git@github.com:juanfranciscofernandezherreros/api-async-webflux.git
 cd api-async-webflux
 ```
